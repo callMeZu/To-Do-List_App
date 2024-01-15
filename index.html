@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>TDL-App</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="style.css" rel="stylesheet" />
+    <link rel="icon" href="./assets/simpelz.jpg" type="image/jpg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;0,900;1,400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main class="app">
+      <section class="greeting">
+        <h2 class="title">
+          Apa rencana kamu hari ini,
+          <input type="text" id="name" placeholder="Nama Kamu" />
+        </h2>
+      </section>
+
+      <section class="create-todo">
+        <form id="new-todo-form">
+          <h4>Tulis Rencana Kamu</h4>
+          <input
+            type="text"
+            name="content"
+            id="content"
+            placeholder="cth: belanja bulanan"
+          />
+          <h4>Pilih kebutuhan anda</h4>
+          <div class="options">
+            <label>
+              <input
+                type="radio"
+                name="category"
+                id="category1"
+                value="business"
+              />
+              <span class="bubble business"></span>
+              <div>Bisnis</div>
+            </label>
+
+            <label>
+              <input
+                type="radio"
+                name="category"
+                id="category2"
+                value="personal"
+              />
+              <span class="bubble personal"></span>
+              <div>Pribadi</div>
+            </label>
+          </div>
+
+          <input type="submit" value="Tambahkan Rencana" />
+        </form>
+      </section>
+
+      <section class="todo-list">
+        <h3>LIST RENCANA</h3>
+        <div class="list" id="todo-list">
+          <!-- <div class="todo-item">
+            <label>
+              <input type="checkbox" />
+              <span class="bubble business"></span>
+            </label>
+
+            <div class="todo-content">
+              <input type="text" value="Meeting owner" readonly />
+            </div>
+
+            <div class="actions">
+              <button class="edit">Edit</button>
+              <button class="delete">Hapus</button>
+            </div>
+          </div>
+
+          <div class="todo-item">
+            <label>
+              <input type="checkbox" />
+              <span class="bubble personal"></span>
+            </label>
+
+            <div class="todo-content">
+              <input type="text" value="Masak spaghetti" readonly />
+            </div>
+
+            <div class="actions">
+              <button class="edit">Edit</button>
+              <button class="delete">Hapus</button>
+            </div>
+          </div> -->
+        </div>
+      </section>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
